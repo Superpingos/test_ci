@@ -14,6 +14,9 @@
 		AA9FD8D91E8BE26A009695B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FD8D71E8BE269009695B1 /* LaunchScreen.storyboard */; };
 		AA9FD8E41E8BE26A009695B1 /* Test_ciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD8E31E8BE26A009695B1 /* Test_ciTests.swift */; };
 		AA9FD8EF1E8BE26A009695B1 /* Test_ciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD8EE1E8BE26A009695B1 /* Test_ciUITests.swift */; };
+		AA9FD9011E8BEA85009695B1 /* Libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD9001E8BEA85009695B1 /* Libs.swift */; };
+		AA9FD9021E8BEA85009695B1 /* Libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD9001E8BEA85009695B1 /* Libs.swift */; };
+		AA9FD9031E8BEA85009695B1 /* Libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD9001E8BEA85009695B1 /* Libs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		AA9FD8EA1E8BE26A009695B1 /* Test_ciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_ciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9FD8EE1E8BE26A009695B1 /* Test_ciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_ciUITests.swift; sourceTree = "<group>"; };
 		AA9FD8F01E8BE26A009695B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9FD9001E8BEA85009695B1 /* Libs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				AA9FD8CE1E8BE269009695B1 /* AppDelegate.swift */,
 				AA9FD8D01E8BE269009695B1 /* ViewController.swift */,
+				AA9FD9001E8BEA85009695B1 /* Libs.swift */,
 				AA9FD8D21E8BE269009695B1 /* Main.storyboard */,
 				AA9FD8D51E8BE269009695B1 /* Assets.xcassets */,
 				AA9FD8D71E8BE269009695B1 /* LaunchScreen.storyboard */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9FD9011E8BEA85009695B1 /* Libs.swift in Sources */,
 				AA9FD8D11E8BE269009695B1 /* ViewController.swift in Sources */,
 				AA9FD8CF1E8BE269009695B1 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9FD8E41E8BE26A009695B1 /* Test_ciTests.swift in Sources */,
+				AA9FD9021E8BEA85009695B1 /* Libs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9FD8EF1E8BE26A009695B1 /* Test_ciUITests.swift in Sources */,
+				AA9FD9031E8BEA85009695B1 /* Libs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +351,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -359,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		AA9FD8F21E8BE26A009695B1 /* Release */ = {
+		AA9FD8F21E8BE26A009695B1 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -391,9 +400,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -404,14 +414,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Adhoc;
 		};
 		AA9FD8F41E8BE26A009695B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -419,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				INFOPLIST_FILE = Test_ci/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicoud.Test-ci";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,18 +437,19 @@
 			};
 			name = Debug;
 		};
-		AA9FD8F51E8BE26A009695B1 /* Release */ = {
+		AA9FD8F51E8BE26A009695B1 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				INFOPLIST_FILE = Test_ci/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicoud.Test-ci";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
-			name = Release;
+			name = Adhoc;
 		};
 		AA9FD8F71E8BE26A009695B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -454,7 +466,7 @@
 			};
 			name = Debug;
 		};
-		AA9FD8F81E8BE26A009695B1 /* Release */ = {
+		AA9FD8F81E8BE26A009695B1 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -467,7 +479,7 @@
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_ci.app/Test_ci";
 			};
-			name = Release;
+			name = Adhoc;
 		};
 		AA9FD8FA1E8BE26A009695B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -483,7 +495,95 @@
 			};
 			name = Debug;
 		};
-		AA9FD8FB1E8BE26A009695B1 /* Release */ = {
+		AA9FD8FB1E8BE26A009695B1 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
+				INFOPLIST_FILE = Test_ciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicoud.Test-ciUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Test_ci;
+			};
+			name = Adhoc;
+		};
+		AA9FD8FC1E8BE2A9009695B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9FD8FD1E8BE2A9009695B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
+				INFOPLIST_FILE = Test_ci/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicoud.Test-ci";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AA9FD8FE1E8BE2A9009695B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6P44KKY5UX;
+				INFOPLIST_FILE = Test_ciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicoud.Test-ciTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_ci.app/Test_ci";
+			};
+			name = Release;
+		};
+		AA9FD8FF1E8BE2A9009695B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -504,7 +604,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9FD8F11E8BE26A009695B1 /* Debug */,
-				AA9FD8F21E8BE26A009695B1 /* Release */,
+				AA9FD8F21E8BE26A009695B1 /* Adhoc */,
+				AA9FD8FC1E8BE2A9009695B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -513,25 +614,31 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9FD8F41E8BE26A009695B1 /* Debug */,
-				AA9FD8F51E8BE26A009695B1 /* Release */,
+				AA9FD8F51E8BE26A009695B1 /* Adhoc */,
+				AA9FD8FD1E8BE2A9009695B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA9FD8F61E8BE26A009695B1 /* Build configuration list for PBXNativeTarget "Test_ciTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9FD8F71E8BE26A009695B1 /* Debug */,
-				AA9FD8F81E8BE26A009695B1 /* Release */,
+				AA9FD8F81E8BE26A009695B1 /* Adhoc */,
+				AA9FD8FE1E8BE2A9009695B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA9FD8F91E8BE26A009695B1 /* Build configuration list for PBXNativeTarget "Test_ciUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9FD8FA1E8BE26A009695B1 /* Debug */,
-				AA9FD8FB1E8BE26A009695B1 /* Release */,
+				AA9FD8FB1E8BE26A009695B1 /* Adhoc */,
+				AA9FD8FF1E8BE2A9009695B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

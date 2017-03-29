@@ -1,0 +1,6 @@
+language: swift
+osx_image: xcode8.2
+xcode_project: Test_ci.xcodeproj
+#xcode_project: Test_ci.xcworkspace
+xcode_scheme: Test_ci
+xcode_sdk: iphonesimulator8.4

@@ -4,3 +4,8 @@ xcode_project: Test_ci.xcodeproj
 #xcode_project: Test_ci.xcworkspace
 xcode_scheme: Test_ci
 xcode_sdk: iphonesimulator8.4
+#scripts:
+#  - xcodebuild -scheme Test_ci -workspace Test_ci.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 5,OS=10.2' buil test
+after_success:
+ - bash <(curl -s https://codecov.io/bash) -t e65757a7-1aee-4287-8292-f2f9d9b3d3e6
+
